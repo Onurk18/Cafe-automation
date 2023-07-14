@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cafeautomation.LoginController">
+   <left>
+      <AnchorPane prefHeight="407.0" prefWidth="228.0" style="-fx-background-color: #263F73;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="-1.0" layoutY="86.0" prefHeight="35.0" prefWidth="229.0" text="Cafe" textFill="#df4fb6">
+               <font>
+                  <Font name="Verdana Bold" size="28.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="332.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="loginLabel" alignment="CENTER" layoutX="8.0" layoutY="75.0" prefHeight="20.0" prefWidth="270.0" textFill="#d71d1d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="31.0" layoutY="28.0" prefHeight="35.0" prefWidth="229.0" text="Login">
+               <font>
+                  <Font name="Verdana" size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameTextField" layoutX="70.0" layoutY="110.0" promptText="Username" />
+            <PasswordField fx:id="passwordPasswordField" layoutX="70.0" layoutY="154.0" promptText="Password" />
+            <Button fx:id="loginButton" layoutX="84.0" layoutY="207.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="30.0" prefWidth="122.0" style="-fx-background-color: #263F73;" text="Login" textFill="WHITE" />
+            <Button fx:id="cancelButton" layoutX="84.0" layoutY="254.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="30.0" prefWidth="122.0" style="-fx-background-color: #263F73;" text="Exit" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
